@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Box, SimpleGrid } from "@chakra-ui/react"
 
 const Container = styled.div`
   background-color: pink;
@@ -8,7 +9,16 @@ const Container = styled.div`
 `;
 
 function Home() {
-  return <Container></Container>;
+  return <Container>
+    <SimpleGrid minChildWidth="120px" spacing="40px">
+      <Box bg="tomato" height="80px"></Box>
+      <Box bg="tomato" height="80px"></Box>
+      <Box bg="tomato" height="80px"></Box>
+      <Box bg="tomato" height="80px"></Box>
+      <Box bg="tomato" height="80px"></Box>
+      <Box bg="tomato" height="80px"></Box>
+    </SimpleGrid>
+  </Container>; 
 }
 
-export default Home;
+export default Home; 
