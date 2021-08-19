@@ -33,7 +33,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "cp ./.env.dev ./.env && react-scripts start",
+    "start": "react-scripts start",
     "start:prod": "cp ./.env.prod ./.env && react-scripts start",
     "build": "set \"GENERATE_SOURCEMAP=false\" && cp ./.env.dev ./.env && react-scripts build",
     "build:prod": "set \"GENERATE_SOURCEMAP=false\" && cp ./.env.prod ./.env && react-scripts build",
