@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/react": "^1.6.6",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
     "@reduxjs/toolkit": "^1.6.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -14,6 +17,7 @@
     "axios": "^0.21.1",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "^8.3.0",
+    "framer-motion": "^4",
     "js-cookie": "^3.0.0",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
