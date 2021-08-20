@@ -43,19 +43,6 @@ function Header({ history }: HeaderPropsType) {
     dispatch(loginActions.logout());
   };
 
-  /*   const handleLink = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    try {
-      dispatch(userActions.login_check());
-      if (e.target instanceof HTMLAnchorElement) {
-        const location = e.target.getAttribute('href');
-        location && history.push(location);
-      }
-    } catch (e) {
-      console.log(e);
-    }
-  }; */
-
   return (
     <Container>
       <div className="link-wrapper">

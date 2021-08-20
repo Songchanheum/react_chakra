@@ -10,10 +10,10 @@ const Container = styled.div`
 
 function Home() {
   return <Container>
-    <SimpleGrid minChildWidth="120px" spacing="40px">
-      <Box bg="tomato" height="80px"></Box>
-      <Box bg="tomato" height="80px"></Box>
-      <Box bg="tomato" height="80px"></Box>
+    <SimpleGrid minChildWidth="250px" spacing="40px">
+      <Box bg="tomato" height="220px"></Box>
+      <Box bg="tomato" height="100px"></Box>
+      <Box bg="tomato" height="100px"></Box>
       <Box bg="tomato" height="80px"></Box>
       <Box bg="tomato" height="80px"></Box>
       <Box bg="tomato" height="80px"></Box>
