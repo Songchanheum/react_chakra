@@ -1,24 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Box, SimpleGrid } from "@chakra-ui/react"
+import { Flex, VStack} from '@chakra-ui/layout';
 
-const Container = styled.div`
-  background-color: pink;
-  width: 100%;
-  height: 100vh;
-`;
+import Menu from '../components/menu';
 
 function Home() {
-  return <Container>
-    <SimpleGrid minChildWidth="250px" spacing="40px">
-      <Box bg="tomato" height="220px"></Box>
-      <Box bg="tomato" height="100px"></Box>
-      <Box bg="tomato" height="100px"></Box>
-      <Box bg="tomato" height="80px"></Box>
-      <Box bg="tomato" height="80px"></Box>
-      <Box bg="tomato" height="80px"></Box>
-    </SimpleGrid>
-  </Container>; 
+  return (
+    <VStack>
+      <Flex w="100%" p={2}>
+        <Menu />
+      </Flex>
+    </VStack>
+  ) 
 }
 
 export default Home; 
