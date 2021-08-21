@@ -3,7 +3,6 @@ import { Switch, Route, Router } from 'react-router-dom';
 
 import './App.css';
 import { History } from 'history';
-import Header from './components/Header';
 import { useDispatch } from 'react-redux';
 import { loginActions } from './store/auth/login';
 import Auth from './components/HOC/authCheck';

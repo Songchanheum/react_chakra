@@ -38,7 +38,7 @@ function SideMenu() {
                 aria-label="About"
                 my={5}
                 w="100%">
-                    
+                    Dev Note
                 </Button>
             </NextLink>
             <NextLink href="/" passHref>
