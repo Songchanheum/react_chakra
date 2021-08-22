@@ -44,8 +44,8 @@ function DevTimeline() {
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
-              className="vertical-timeline-element--education"
-              date="2020.11"
+              className="vertical-timeline-element--work"
+              date="2016.11"
               contentStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
               contentArrowStyle={{ borderRight: '7px solid  rgb(16, 204, 82)' }}
               iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
@@ -59,7 +59,7 @@ function DevTimeline() {
             </VerticalTimelineElement>
             <div onMouseOver={()=>setCnp(true)} onMouseOut={()=>setCnp(false)}>
             <VerticalTimelineElement
-              className="vertical-timeline-element--work"
+              className="vertical-timeline-element--education"
               date="2016.11 - 2018.11"
               contentStyle={{ background: 'rgb(237, 165, 169)', color: '#fff' }}
               contentArrowStyle={{ borderRight: '7px solid  rgb(237, 165, 169)' }}
@@ -141,7 +141,7 @@ function DevTimeline() {
             </VerticalTimelineElement>
             </div>
             <VerticalTimelineElement
-              className="vertical-timeline-element--work"
+              className="vertical-timeline-element--education"
               date="2020.11"
               contentStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
               contentArrowStyle={{ borderRight: '7px solid  rgb(233, 30, 99)' }}
@@ -154,7 +154,6 @@ function DevTimeline() {
                 (주) 카피앤패이스트 퇴사
               </p>
             </VerticalTimelineElement>
-            
             <VerticalTimelineElement
               className="vertical-timeline-element--education"
               date="2020.11"
@@ -169,10 +168,9 @@ function DevTimeline() {
                 (주) 에코플래그 입사
               </p>
             </VerticalTimelineElement>
-            
             <div onMouseOver={()=>setEco(true)} onMouseOut={()=>setEco(false)}>
               <VerticalTimelineElement
-                className="vertical-timeline-element--education"
+                className="vertical-timeline-element--work"
                 date="2020.11 ~ 현재까지"
                 contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}

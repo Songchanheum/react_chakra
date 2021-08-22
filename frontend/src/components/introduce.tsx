@@ -29,14 +29,14 @@ function introduce() {
             alignSelf="flex-start"
             >
                 <Box mt={isSmallScreen ? "0":16} align="flex-start">
-                    <Text fontSize="5xl" fontWeight="semibold">
+                    <Text fontSize={isSmallScreen ? "5xl":"4xl"} fontWeight="semibold">
                         안녕하세요!
                     </Text>
                     <Flex>
-                    <Text fontSize="7xl" fontWeight="bold" bgGradient="linear(to-r, pink.500, purple.400, red.300)" bgClip="text">
+                    <Text fontSize={isSmallScreen ? "7xl":"6xl"} fontWeight="bold" bgGradient="linear(to-r, pink.500, purple.400, red.300)" bgClip="text">
                         송찬흠 
                     </Text>
-                    <Text p="5" fontSize="5xl" fontWeight="semibold" orientation="vertical">
+                    <Text p={isSmallScreen ? "5":"5"} fontSize={isSmallScreen ? "5xl":"4xl"} fontWeight="semibold" orientation="vertical">
                         입니다.
                     </Text>
                     </Flex>

@@ -53,7 +53,7 @@ function Profile() {
                 </Box>
         </Flex>
         <Flex direction={isSmallScreen ? "row" : "column"} w="100%"
-        maxWidth={{base: "100vh", md:"130vh", lg: "130vh", xl: "130vh"}}>
+        maxWidth={{base: "100vh", md:"100vh", lg: "100vh", xl: "100vh"}}>
             <Image borderRadius='3xl' display={isSmallScreen ? "flex" : "none"} zIndex="1" alignSelf="center" backgroundColor="transparent" w={150} h={200} src={ProfileImage} />
             <Box mt={10} alignSelf="center" w="100%">
                 <Stack
