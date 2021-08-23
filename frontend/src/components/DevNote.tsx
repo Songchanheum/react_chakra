@@ -2,9 +2,12 @@ import React from 'react'
 import {useColorMode} from "@chakra-ui/color-mode";
 import {useMediaQuery} from '@chakra-ui/media-query';
 import NextLink from 'next/link';
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, HStack, ListItem, Tag, Text, VStack } from '@chakra-ui/react';
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, HStack, Image, ListItem, Tag, Text, VStack } from '@chakra-ui/react';
 import { Link } from "react-scroll";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react"
+import PortImage from "../image/portpolio.jpg";
+import Port2Image from "../image/portpolio2.jpg";
+
 function DevNote(props:any) {
     
     const { colorMode } = useColorMode();
@@ -28,7 +31,7 @@ function DevNote(props:any) {
             </TabList>
             <TabPanels>
                 <TabPanel>
-                <Accordion allowMultiple defaultIndex={[0]} allowToggle mb={2}>
+                <Accordion allowMultiple allowToggle mb={2}>
                     <AccordionItem>
                         <h2>
                         <AccordionButton backgroundColor={isDark? "gray.600" : "gray.100"} _expanded={{ bg: isDark? "gray.500" : "gray.200", color: isDark ? "white" : "gray.700" }}>
@@ -37,18 +40,20 @@ function DevNote(props:any) {
                                 <Box>
                                 EPC Cloud IoT Portal 구축 프로젝트 - 케이티 
                                 </Box>
-                                <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="gray">
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="gray">
                                  AngularJS
                                 </Tag>
-                                <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
                                  Javascript
                                 </Tag>
-                                <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
                                  JAVA
                                 </Tag>
-                                <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
                                  Spring Framework
                                 </Tag>
+                                </Box>
                             </HStack>
                             :
                             <Box flex="1" textAlign="left">
@@ -63,18 +68,20 @@ function DevNote(props:any) {
                         {isSmallScreen ? 
                         '':
                         <HStack spacing={1}>
-                            <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="gray">
+                            <Box>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="gray">
                             AngularJS
                             </Tag>
-                            <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
                             Javascript
                             </Tag>
-                            <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
                             JAVA
                             </Tag>
-                            <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
                             Spring Framework
                             </Tag>
+                            </Box>
                         </HStack>
                         }
                         <Text fontSize="xl" mb={3}>
@@ -99,15 +106,16 @@ function DevNote(props:any) {
                                 <Box>
                                     TV Coupon 서비스 고도화  - 케이티하이텔
                                 </Box>
-                                <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
                                  Javascript
                                 </Tag>
-                                <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
                                  JAVA
                                 </Tag>
-                                <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
                                  Spring Framework
-                                </Tag>
+                                </Tag></Box>
                             </HStack>
                             :
                             <Box flex="1" textAlign="left">
@@ -122,15 +130,16 @@ function DevNote(props:any) {
                     {isSmallScreen ? 
                     '': 
                     <HStack spacing={1}>
-                        <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                        <Box>
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
                         Javascript
                         </Tag>
-                        <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
                         JAVA
                         </Tag>
-                        <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
                         Spring Framework
-                        </Tag>
+                        </Tag></Box>
                     </HStack>
                     }
                         <Text fontSize="xl" mb={3}>
@@ -155,9 +164,10 @@ function DevNote(props:any) {
                                 <Box >
                                     마이크로템플릿 WEBAPP Service 고도화 - 케이티하이텔
                                 </Box>
-                                <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
                                  Javascript
-                                </Tag>
+                                </Tag></Box>
                             </HStack>
                             :
                             <Box flex="1" textAlign="left">
@@ -172,9 +182,10 @@ function DevNote(props:any) {
                     {isSmallScreen ? 
                     '': 
                     <HStack spacing={1}>
-                        <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                        <Box>
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
                         Javascript
-                        </Tag>
+                        </Tag></Box>
                     </HStack>
                     }
                         <Text fontSize="xl" mb={3}>
@@ -199,12 +210,13 @@ function DevNote(props:any) {
                                 <Box >
                                     Oauth2 / Vue.js 이용한 사내 로그인 서비스 솔루션 구축 - 내부과제
                                 </Box>
-                                <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
                                  Javascript
                                 </Tag>
-                                <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="cyan">
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="cyan">
                                  VueJs
-                                </Tag>
+                                </Tag></Box>
                             </HStack>
                             :
                             <Box flex="1" textAlign="left">
@@ -219,12 +231,13 @@ function DevNote(props:any) {
                     {isSmallScreen ? 
                     '': 
                     <HStack spacing={1}>
-                        <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                        <Box>
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
                             Javascript
                         </Tag>
-                        <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="cyan">
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="cyan">
                             VueJs
-                        </Tag>
+                        </Tag></Box>
                     </HStack>
                     }
                         <Text fontSize="xl" mb={3}>
@@ -249,15 +262,16 @@ function DevNote(props:any) {
                                 <Box>
                                     GolfZone Matrixview 서비스 개발 - 골프존
                                 </Box>
-                                <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="teal">
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="teal">
                                  Android
                                 </Tag>
-                                <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="telegram">
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="telegram">
                                  C
                                 </Tag>
-                                <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="telegram">
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="telegram">
                                  NDK
-                                </Tag>
+                                </Tag></Box>
                             </HStack>
                             :
                             <Box flex="1" textAlign="left">
@@ -272,15 +286,16 @@ function DevNote(props:any) {
                     {isSmallScreen ? 
                     '': 
                     <HStack spacing={1}>
-                        <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="teal">
+                        <Box>
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="teal">
                             Android
                         </Tag>
-                        <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="telegram">
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="telegram">
                             C
                         </Tag>
-                        <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="telegram">
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="telegram">
                             NDK
-                        </Tag>
+                        </Tag></Box>
                     </HStack>
                     }
                         <Text fontSize="xl" mb={3}>
@@ -310,15 +325,16 @@ function DevNote(props:any) {
                                 <Box>
                                     Freeview 서비스 개발 - 케이티
                                 </Box>
-                                <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
                                  JAVA
                                 </Tag>
-                                <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
                                  Spring Framework
                                 </Tag>
-                                <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="purple">
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="purple">
                                  Netty
-                                </Tag>
+                                </Tag></Box>
                             </HStack>
                             :
                             <Box flex="1" textAlign="left">
@@ -333,15 +349,16 @@ function DevNote(props:any) {
                     {isSmallScreen ? 
                     '': 
                     <HStack spacing={1}>
-                        <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                        <Box>
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
                             JAVA
                         </Tag>
-                        <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
                             Spring Framework
                         </Tag>
-                        <Tag size={'sm'} key={'sm'} variant="solid" colorScheme="purple">
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="purple">
                             Netty
-                        </Tag>
+                        </Tag></Box>
                     </HStack>
                     }
                         <Text fontSize="xl" mb={3}>
@@ -361,13 +378,850 @@ function DevNote(props:any) {
                         </ListItem>
                     </AccordionPanel>
                 </AccordionItem>
+                <AccordionItem>
+                    <h2>
+                    <AccordionButton backgroundColor={isDark? "gray.600" : "gray.100"} _expanded={{ bg: isDark? "gray.500" : "gray.200", color: isDark ? "white" : "gray.700" }}>
+                    {isSmallScreen ? 
+                        <HStack spacing={1} textAlign="left" flex="1" >
+                                <Box>
+                                    인터렉티브 타임슬라이스 서비스 고도화 - 케이티
+                                </Box>
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                 JAVA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                                 Spring Framework
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="purple">
+                                 Netty
+                                </Tag>
+                                </Box>
+                            </HStack>
+                            :
+                            <Box flex="1" textAlign="left">
+                                인터렉티브 타임슬라이스 서비스 고도화
+                            </Box>
+                    }
+
+                        <AccordionIcon />
+                    </AccordionButton>
+                    </h2>
+                    <AccordionPanel>
+                    {isSmallScreen ? 
+                    '': 
+                    <HStack spacing={1}>
+                        <Box>
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                            JAVA
+                        </Tag>
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                            Spring Framework
+                        </Tag>
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="purple">
+                            Netty
+                        </Tag></Box>
+                    </HStack>
+                    }
+                        <Text fontSize="xl" mb={3}>
+                        2018.06 ~ 2018.10
+                        </Text>
+                        <ListItem>
+                        자카르타 아시안게임 배드민턴, 농구 경기에 멀티 뷰 촬영 
+                        </ListItem>
+                        <ListItem>
+                        Streaming Service Server Programe 개발 및 유지보수, API서버 개발 및 유지보수
+                        </ListItem>
+                        <ListItem>
+                        Server Program  Web BackEnd 개발
+                        </ListItem>
+                        <ListItem>
+                        해외 출장(인도네시아 자카르타)
+                        </ListItem>
+                    </AccordionPanel>
+                </AccordionItem>
+                <AccordionItem>
+                    <h2>
+                    <AccordionButton backgroundColor={isDark? "gray.600" : "gray.100"} _expanded={{ bg: isDark? "gray.500" : "gray.200", color: isDark ? "white" : "gray.700" }}>
+                    {isSmallScreen ? 
+                        <HStack spacing={1} textAlign="left" flex="1" >
+                                <Box>
+                                    인터렉티브 멀티뷰 서비스 고도화 - 케이티
+                                </Box>
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                 JAVA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                                 Spring Framework
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="purple">
+                                 Netty
+                                </Tag></Box>
+                            </HStack>
+                            :
+                            <Box flex="1" textAlign="left">
+                                인터렉티브 멀티뷰 서비스 고도화
+                            </Box>
+                    }
+
+                        <AccordionIcon />
+                    </AccordionButton>
+                    </h2>
+                    <AccordionPanel>
+                    {isSmallScreen ? 
+                    '': 
+                    <HStack spacing={1}>
+                        <Box>
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                            JAVA
+                        </Tag>
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                            Spring Framework
+                        </Tag>
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="purple">
+                            Netty
+                        </Tag></Box>
+                    </HStack>
+                    }
+                        <Text fontSize="xl" mb={3}>
+                        2017.12 ~ 2018.03
+                        </Text>
+                        <ListItem>
+                        평창 올림픽 쇼트트랙 멀티 뷰 촬영에 대한 Streaming service Server Program 개발
+                        </ListItem>
+                        <ListItem>
+                        RTSP 통신 이용하여 UDP Socket Frame Transmission
+                        </ListItem>
+                        <ListItem>
+                        Server Program 개발(JAVA, Netty Socket)
+                        </ListItem>
+                    </AccordionPanel>
+                </AccordionItem>
+                <AccordionItem>
+                    <h2>
+                    <AccordionButton backgroundColor={isDark? "gray.600" : "gray.100"} _expanded={{ bg: isDark? "gray.500" : "gray.200", color: isDark ? "white" : "gray.700" }}>
+                    {isSmallScreen ? 
+                        <HStack spacing={1} textAlign="left" flex="1" >
+                                <Box>
+                                OTT Telebee 통합관리 시스템 구축 및 개발 - (주)알티캐스트
+                                </Box>
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                    JAVA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                                    Spring Framework
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="gray">
+                                    AngularJS
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="facebook">
+                                    JQuery
+                                </Tag></Box>
+                            </HStack>
+                            :
+                            <Box flex="1" textAlign="left">
+                                OTT Telebee 통합관리 시스템 구축 및 개발
+                            </Box>
+                    }
+
+                        <AccordionIcon />
+                    </AccordionButton>
+                    </h2>
+                    <AccordionPanel>
+                    {isSmallScreen ? 
+                    '': 
+                    <HStack spacing={1}>
+                        <Box>
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                            JAVA
+                        </Tag>
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                            Spring Framework
+                        </Tag>
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="gray">
+                            AngularJS
+                        </Tag>
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="facebook">
+                            JQuery
+                        </Tag></Box>
+                    </HStack>
+                    }
+                        <Text fontSize="xl" mb={3}>
+                        2017.03 ~ 2017.09
+                        </Text>
+                        <ListItem>
+                        Web FrontEnd, BackEnd 개발
+                        </ListItem>
+                        <ListItem>
+                        GitLab, Sourcetree를 이용한 Project 관리
+                        </ListItem>
+                        <ListItem>
+                        구글docs를 이용한 Test Case 및 결함관리 작성 공유, 개발 중 Client 요구사항에 대한 내용 정리 후 내용 전달 및 개발적용
+                        </ListItem>
+                    </AccordionPanel>
+                </AccordionItem>
+                <AccordionItem>
+                    <h2>
+                    <AccordionButton backgroundColor={isDark? "gray.600" : "gray.100"} _expanded={{ bg: isDark? "gray.500" : "gray.200", color: isDark ? "white" : "gray.700" }}>
+                    {isSmallScreen ? 
+                        <HStack spacing={1} textAlign="left" flex="1" >
+                                <Box>
+                                MSMS 개발 및 운영 용역 - 케이티하이텔
+                                </Box>
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="telegram">
+                                    C#/ASP
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blackAlpha">
+                                    MSSQL
+                                </Tag></Box>
+                            </HStack>
+                            :
+                            <Box flex="1" textAlign="left">
+                                MSMS 개발 및 운영 용역
+                            </Box>
+                    }
+
+                        <AccordionIcon />
+                    </AccordionButton>
+                    </h2>
+                    <AccordionPanel>
+                    {isSmallScreen ? 
+                    '': 
+                    <HStack spacing={1}>
+                        <Box>
+                        <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="telegram">
+                            C#/ASP
+                        </Tag>
+                         <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blackAlpha">
+                            MSSQL
+                        </Tag>
+                        </Box>
+                    </HStack>
+                    }
+                        <Text fontSize="xl" mb={3}>
+                        2016.11 - 2018.12
+                        </Text>
+                        <ListItem>
+                        C#/ASP, Windows Server 2008, IIS, MS-SQL
+                        </ListItem>
+                        <ListItem>
+                        2018년 3월 정 책임자 유지보수 및 운영
+                        </ListItem>
+                    </AccordionPanel>
+                </AccordionItem>
                 </Accordion>
                 </TabPanel>
                 <TabPanel>
-                <p>two!</p>
+                <Accordion allowMultiple allowToggle mb={2}>
+                <AccordionItem>
+                        <h2>
+                        <AccordionButton backgroundColor={isDark? "gray.600" : "gray.100"} _expanded={{ bg: isDark? "gray.500" : "gray.200", color: isDark ? "white" : "gray.700" }}>
+                            {isSmallScreen ? 
+                            <HStack spacing={1} flex="1" textAlign="left">
+                                <Box>
+                                사물인터넷 기반 상수관망 수질 및 수량 저전력 계측 시스템 개발
+                                </Box>
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="orange">
+                                    Javascript
+                                </Tag>
+                                <Tag  ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                    ReactJS
+                                </Tag>
+                                </Box>
+                            </HStack>
+                            :
+                            <Box flex="1" textAlign="left">
+                            사물인터넷 기반 상수관망 수질 및 수량 저전력 계측 시스템 개발
+                            </Box>
+                            
+                            }
+                            <AccordionIcon />
+                        </AccordionButton>
+                        </h2>
+                        <AccordionPanel>
+                        {isSmallScreen ? 
+                        '':
+                        <HStack spacing={1}>
+                            <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="orange">
+                                    Javascript
+                                </Tag>
+                                <Tag  ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                    ReactJS
+                                </Tag>
+                                </Box>
+                        </HStack>
+                        }
+                        <Text fontSize="xl" mb={3}>
+                        2021.07 - 2021.08
+                        </Text>
+                        <ListItem>
+                        JIRA를 이용한 애자일 Scrum 관리
+                        </ListItem>
+                        <ListItem>
+                        Scrum Master로 업무분담 및 개발진행, 디자인 및 기획 업무협업 진행
+                        </ListItem>
+                        <ListItem>
+                        Jenkins 자동배포 관리
+                        </ListItem>
+                        <ListItem>
+                        ERD, API 설계
+                        </ListItem>
+                        </AccordionPanel>
+                    </AccordionItem>
+                <AccordionItem>
+                        <h2>
+                        <AccordionButton backgroundColor={isDark? "gray.600" : "gray.100"} _expanded={{ bg: isDark? "gray.500" : "gray.200", color: isDark ? "white" : "gray.700" }}>
+                            {isSmallScreen ? 
+                            <HStack spacing={1} flex="1" textAlign="left">
+                                <Box>
+                                수돗물 수질 이상여부 진단 키트 개발 및 비상운전(수계전환 등) 시 안전한 수돗물 공급을 위한 연계관로 운영지원시스템 구축
+                                </Box>
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                    JAVA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="facebook">
+                                    eGovFramework
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                    JPA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="cyan">
+                                    PostgreSQL
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="orange">
+                                    Javascript
+                                </Tag>
+                                <Tag  ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                    ReactJS
+                                </Tag>
+                                </Box>
+                            </HStack>
+                            :
+                            <Box flex="1" textAlign="left">
+                            수돗물 수질 이상여부 진단 키트 개발 및 비상운전(수계전환 등) 시 안전한 수돗물 공급을 위한 연계관로 운영지원시스템 구축
+                            </Box>
+                            
+                            }
+                            <AccordionIcon />
+                        </AccordionButton>
+                        </h2>
+                        <AccordionPanel>
+                        {isSmallScreen ? 
+                        '':
+                        <HStack spacing={1}>
+                            <Box>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                    JAVA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="facebook">
+                                    eGovFramework
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                    JPA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="cyan">
+                                    PostgreSQL
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="orange">
+                                    Javascript
+                                </Tag>
+                                <Tag  ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                    ReactJS
+                                </Tag></Box>
+                        </HStack>
+                        }
+                        <Text fontSize="xl" mb={3}>
+                        2021.04 - 2021.07
+                        </Text>
+                        <ListItem>
+                        개발 진행 중 인계받아 개발 마무리 진행
+                        </ListItem>
+                        <ListItem>
+                        Full Stack 개발 진행
+                        </ListItem>
+                        </AccordionPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                        <h2>
+                        <AccordionButton backgroundColor={isDark? "gray.600" : "gray.100"} _expanded={{ bg: isDark? "gray.500" : "gray.200", color: isDark ? "white" : "gray.700" }}>
+                            {isSmallScreen ? 
+                            <HStack spacing={1} flex="1" textAlign="left">
+                                <Box>
+                                아쿠아유나이티드 4.0 시스템 개발
+                                </Box>
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                    JAVA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                                    SpringBoot
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                    JPA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="cyan">
+                                    PostgreSQL
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="orange">
+                                    Javascript
+                                </Tag>
+                                <Tag  ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                    ReactJS
+                                </Tag></Box>
+                            </HStack>
+                            :
+                            <Box flex="1" textAlign="left">
+                            아쿠아유나이티드 4.0 시스템 개발
+                            </Box>
+                            
+                            }
+                            <AccordionIcon />
+                        </AccordionButton>
+                        </h2>
+                        <AccordionPanel>
+                        {isSmallScreen ? 
+                        '':
+                        <HStack spacing={1}>
+                            <Box>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                    JAVA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                                    SpringBoot
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                    JPA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="cyan">
+                                    PostgreSQL
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="orange">
+                                    Javascript
+                                </Tag>
+                                <Tag  ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                    ReactJS
+                                </Tag>
+                                </Box>
+                        </HStack>
+                        }
+                        <Text fontSize="xl" mb={3}>
+                        2021.04 - 2021.06
+                        </Text>
+                        <ListItem>
+                        개발 진행 중 인계받아 개발 마무리 진행
+                        </ListItem>
+                        <ListItem>
+                        Full Stack 개발 진행
+                        </ListItem>
+                        </AccordionPanel>
+                    </AccordionItem>
+                <AccordionItem>
+                        <h2>
+                        <AccordionButton backgroundColor={isDark? "gray.600" : "gray.100"} _expanded={{ bg: isDark? "gray.500" : "gray.200", color: isDark ? "white" : "gray.700" }}>
+                            {isSmallScreen ? 
+                            <HStack spacing={1} flex="1" textAlign="left">
+                                <Box>
+                                물정보앱(Smart Water Grid) - 내부과제
+                                </Box>
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                    JAVA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="facebook">
+                                    eGovFramework
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                    JPA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="cyan">
+                                    PostgreSQL
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="orange">
+                                    Javascript
+                                </Tag>
+                                <Tag  ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                    ReactJS
+                                </Tag>
+                                </Box>
+                            </HStack>
+                            :
+                            <Box flex="1" textAlign="left">
+                            물정보앱(Smart Water Grid)
+                            </Box>
+                            
+                            }
+                            <AccordionIcon />
+                        </AccordionButton>
+                        </h2>
+                        <AccordionPanel>
+                        {isSmallScreen ? 
+                        '':
+                        <HStack spacing={1}>
+                            <Box>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                    JAVA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="facebook">
+                                    eGovFramework
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                    JPA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="cyan">
+                                    PostgreSQL
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="orange">
+                                    Javascript
+                                </Tag>
+                                <Tag  ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                    ReactJS
+                                </Tag>
+                                </Box>
+                        </HStack>
+                        }
+                        <Text fontSize="xl" mb={3}>
+                        2021.03 - 2021.06
+                        </Text>
+                        <ListItem>
+                        ERD설계, API설계, API구축, Web페이지 구축 진행
+                        </ListItem>
+                        <ListItem>
+                        내부과제로 1인 개발, 1인 교육 프로젝트로 신입사원 교육과 같이 진행
+                        </ListItem>
+                        <ListItem>
+                        Full Stack 개발 진행
+                        </ListItem>
+                        </AccordionPanel>
+                    </AccordionItem>
+                <AccordionItem>
+                        <h2>
+                        <AccordionButton backgroundColor={isDark? "gray.600" : "gray.100"} _expanded={{ bg: isDark? "gray.500" : "gray.200", color: isDark ? "white" : "gray.700" }}>
+                            {isSmallScreen ? 
+                            <HStack spacing={1} flex="1" textAlign="left">
+                                <Box>
+                                배출영향분석 표준 프로그램 유지관리(2021)
+                                </Box>
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="telegram">
+                                    C#
+                                </Tag>
+                                
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blackAlpha">
+                                    MSSQL
+                                </Tag>
+                                </Box>
+                            </HStack>
+                            :
+                            <Box flex="1" textAlign="left">
+                            배출영향분석 표준 프로그램 유지관리(2021)
+                            </Box>
+                            
+                            }
+                            <AccordionIcon />
+                        </AccordionButton>
+                        </h2>
+                        <AccordionPanel>
+                        {isSmallScreen ? 
+                        '':
+                        <HStack spacing={1}>
+                            <Box>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="telegram">
+                                C#
+                            </Tag>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blackAlpha">
+                                MSSQL
+                            </Tag></Box>
+                        </HStack>
+                        }
+                        <Text fontSize="xl" mb={3}>
+                            2020.11 ~ 2021.03
+                        </Text>
+                        <ListItem>
+                        C# Windows Forms 을 사용한 프로그램 유지관리
+                        </ListItem>
+                        <ListItem>
+                        고객 요청사항에 맞게 수정 및 배포(InstallShield)
+                        </ListItem>
+                        </AccordionPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                        <h2>
+                        <AccordionButton backgroundColor={isDark? "gray.600" : "gray.100"} _expanded={{ bg: isDark? "gray.500" : "gray.200", color: isDark ? "white" : "gray.700" }}>
+                            {isSmallScreen ? 
+                            <HStack spacing={1} flex="1" textAlign="left">
+                                <Box>
+                                전국오염원조사 DB 및 웹 시스템 구축(4) 
+                                </Box>
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="facebook">
+                                    JQuery
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                 Javascript
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                 JAVA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="facebook">
+                                    eGovFramework
+                                </Tag>
+                                </Box>
+                            </HStack>
+                            :
+                            <Box flex="1" textAlign="left">
+                            전국오염원조사 DB 및 웹 시스템 구축(4) 
+                            </Box>
+                            
+                            }
+                            <AccordionIcon />
+                        </AccordionButton>
+                        </h2>
+                        <AccordionPanel>
+                        {isSmallScreen ? 
+                        '':
+                        <HStack spacing={1}>
+                            <Box>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="facebook">
+                                    JQuery
+                            </Tag>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                            Javascript
+                            </Tag>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                            JAVA
+                            </Tag>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="facebook">
+                                eGovFramework
+                            </Tag>
+                            </Box>
+                        </HStack>
+                        }
+                        <Text fontSize="xl" mb={3}>
+                            2020.11 ~ 2021.03
+                        </Text>
+                        <ListItem>
+                        전국오염원조사 홈페이지 (https://wems.nier.go.kr) 유지보수 및 고도화
+                        </ListItem>
+                        </AccordionPanel>
+                    </AccordionItem>
+                    
+                    </Accordion>
                 </TabPanel>
                 <TabPanel>
-                <p>two!</p>
+                <Accordion allowMultiple allowToggle mb={2}>
+                <AccordionItem>
+                        <h2>
+                        <AccordionButton backgroundColor={isDark? "gray.600" : "gray.100"} _expanded={{ bg: isDark? "gray.500" : "gray.200", color: isDark ? "white" : "gray.700" }}>
+                            {isSmallScreen ? 
+                            <HStack spacing={1} flex="1" textAlign="left">
+                                <Box>
+                                포트폴리오 웹 페이지 개발
+                                </Box>
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                    ReactJS
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="yellow">
+                                    TypeScript
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="gray">
+                                    express
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="purple">
+                                    NoSQL
+                                </Tag>
+                                </Box>
+                            </HStack>
+                            :
+                            <Box flex="1" textAlign="left">
+                             포트폴리오 웹 페이지 개발
+                            </Box>
+                            
+                            }
+                            <AccordionIcon />
+                        </AccordionButton>
+                        </h2>
+                        <AccordionPanel>
+                        {isSmallScreen ? 
+                        '':
+                        <HStack spacing={1}>
+                            <Box>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                    ReactJS
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="yellow">
+                                    TypeScript
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="gray">
+                                    express
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="purple">
+                                    NoSQL
+                                </Tag>
+                            </Box>
+                        </HStack>
+                        }
+                        <Text fontSize="xl" mb={3}>
+                            2021.07 ~ 2021.08(진행중)
+                        </Text>
+                        <ListItem>
+                        참여 인원 : 1명
+                        </ListItem>
+                        <ListItem>
+                         Chakra UI Component를 이용하여 개발
+                        </ListItem>
+                        <ListItem>
+                        NodeJS express 이용하여 서버 구성 및 모듈화 진행
+                        </ListItem>
+                        </AccordionPanel>
+                    </AccordionItem>
+                <AccordionItem>
+                        <h2>
+                        <AccordionButton backgroundColor={isDark? "gray.600" : "gray.100"} _expanded={{ bg: isDark? "gray.500" : "gray.200", color: isDark ? "white" : "gray.700" }}>
+                            {isSmallScreen ? 
+                            <HStack spacing={1} flex="1" textAlign="left">
+                                <Box>
+                                업비트 오토 트레이딩 프로그램 개발
+                                </Box>
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                    ReactJS
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="gray">
+                                    express
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="linkedin">
+                                    Electron
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="cyan">
+                                    PostgreSQL
+                                </Tag>
+                                </Box>
+                            </HStack>
+                            :
+                            <Box flex="1" textAlign="left">
+                             업비트 오토 트레이딩 프로그램 개발
+                            </Box>
+                            
+                            }
+                            <AccordionIcon />
+                        </AccordionButton>
+                        </h2>
+                        <AccordionPanel>
+                        {isSmallScreen ? 
+                        '':
+                        <HStack spacing={1}>
+                            <Box>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                ReactJS
+                            </Tag>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="gray">
+                                express
+                            </Tag>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="linkedin">
+                                Electron
+                            </Tag>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="cyan">
+                                PostgreSQL
+                            </Tag>
+                            </Box>
+                        </HStack>
+                        }
+                        <Text fontSize="xl" mb={3}>
+                            2021.04 ~ 2021.05
+                        </Text>
+                        <Image src={Port2Image}></Image>
+                        <ListItem>
+                        참여 인원 : 1명
+                        </ListItem>
+                        <ListItem>
+                        Upbit Open API 연동
+                        </ListItem>
+                        <ListItem>
+                        사용자의 key를 입력받아 정보를 가져 온 후 수치를 입력하여 Auto Trading 진행
+                        </ListItem>
+                        <ListItem>
+                        Electron을 사용하여 윈도우 프로그램으로 제작
+                        </ListItem>
+                        </AccordionPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                        <h2>
+                        <AccordionButton backgroundColor={isDark? "gray.600" : "gray.100"} _expanded={{ bg: isDark? "gray.500" : "gray.200", color: isDark ? "white" : "gray.700" }}>
+                            {isSmallScreen ? 
+                            <HStack spacing={1} flex="1" textAlign="left">
+                                <Box>
+                                출퇴근 체크 프로그램
+                                </Box>
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                 JAVA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                                 Spring Framework
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="whatsapp">
+                                    MySQL
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="teal">
+                                    Android
+                                </Tag>
+                                </Box>
+                            </HStack>
+                            :
+                            <Box flex="1" textAlign="left">
+                            출퇴근 체크 프로그램
+                            </Box>
+                            
+                            }
+                            <AccordionIcon />
+                        </AccordionButton>
+                        </h2>
+                        <AccordionPanel>
+                        {isSmallScreen ? 
+                        '':
+                        <HStack spacing={1}>
+                            <Box>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                JAVA
+                            </Tag>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                                Spring Framework
+                            </Tag>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="whatsapp">
+                                MySQL
+                            </Tag>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="teal">
+                                Android
+                            </Tag>
+                            </Box>
+                        </HStack>
+                        }
+                        <Text fontSize="xl" mb={3}>
+                            2018.05 ~ 2018.06
+                        </Text>
+                        <Image src={PortImage}></Image>
+                        <ListItem>
+                        참여 인원 : 1명
+                        </ListItem>
+                        <ListItem>
+                            Kakao Developer 연동, Open API 사용
+                        </ListItem>
+                        <ListItem>
+                        출퇴근 정보를 저장할 수 있는 앱 개발
+                        </ListItem>
+                        <ListItem>
+                        백앤드 서버, 안드로이드 UI 개발 및 DB 연동
+                        </ListItem>
+                        </AccordionPanel>
+                    </AccordionItem>
+                    </Accordion>
                 </TabPanel>
             </TabPanels>
         </Tabs>

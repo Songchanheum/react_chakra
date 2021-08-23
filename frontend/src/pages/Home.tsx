@@ -8,6 +8,7 @@ import { Button, Divider } from '@chakra-ui/react';
 import Profile from '../components/Profile';
 import DevTimeline from '../components/DevTimeline';
 import DevNote from '../components/DevNote';
+import About from '../components/About';
 
 function Home() {
   
@@ -83,6 +84,9 @@ function Home() {
       <Divider w="85%" center/>
       <p id="3" />
       <DevNote />
+      <Divider w="85%" center/>
+      <p id="4" />
+      <About />
     </VStack>
     <TopButton 
     className={BtnStatus ? "active" : ""} // 버튼 노출 여부

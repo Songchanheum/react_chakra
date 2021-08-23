@@ -2,7 +2,7 @@ import React from 'react'
 import {useColorMode} from "@chakra-ui/color-mode";
 import {useMediaQuery} from '@chakra-ui/media-query';
 import NextLink from 'next/link';
-import { Badge, Box, Button, Flex, Heading, Image, Link, ListItem, Stack, Text, UnorderedList } from '@chakra-ui/react';
+import { Badge, Box, Button, Flex, Heading, HStack, Image, Link, ListItem, Stack, Tag, Text, UnorderedList } from '@chakra-ui/react';
 import ProfileImage from "../image/profile1.jpg";
 import GohomeImage from "../image/gohome.gif";
 import HomeImage from "../image/home.gif";
@@ -55,9 +55,10 @@ function Profile() {
         <Flex direction={isSmallScreen ? "row" : "column"} w="100%"
         maxWidth={{base: "100vh", md:"100vh", lg: "100vh", xl: "100vh"}}>
             <Image borderRadius='3xl' display={isSmallScreen ? "flex" : "none"} zIndex="1" alignSelf="center" backgroundColor="transparent" w={150} h={200} src={ProfileImage} />
-            <Box mt={10} alignSelf="center" w="100%">
+            <Flex direction="column">
+            <Box alignSelf="center" w="100%">
                 <Stack
-                    mb={10}
+                    mb={1}
                     mx={[0, 0, 10]}
                     padding={4}
                     align="start"
@@ -88,8 +89,96 @@ function Profile() {
                     </UnorderedList>
                 </Stack>
             </Box>
-             
+            <Box alignSelf="center" w="100%">
+            <Stack
+                mb={10}
+                mx={[0, 0, 10]}
+                padding={4}
+                align="start"
+                borderLeft="5px solid"
+                borderColor={"pink.200"}
+                color={isDark ? "white" : "black"}
+                _hover={{ shadow: "lg" }}
+                backgroundColor={isDark ? "gray.800" : "gray.100"}
+                rounded="sm"
+                fontSize="md"
+            >
+                <Text textAlign="left" color="pink.200" fontWeight="bold">
+                            Tech Stack
+                </Text>
+                <Box>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="gray">
+                        AngularJS
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="cyan">
+                        VueJs
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                        ReactJS
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="gray">
+                        express
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="linkedin">
+                        Electron
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="facebook">
+                        JQuery
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="orange">
+                        Javascript
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="yellow">
+                        TypeScript
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                        JAVA
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                        Spring Framework
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                        SpringBoot
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="facebook">
+                        eGovFramework
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="telegram">
+                        C
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="telegram">
+                        NDK
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="telegram">
+                        C#/ASP
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="telegram">
+                        C#
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="whatsapp">
+                        MySQL
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blackAlpha">
+                        MSSQL
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                        Oracle
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="cyan">
+                        PostgreSQL
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                        JPA
+                    </Tag>
+                    <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="purple">
+                        NoSQL
+                    </Tag>
+                </Box>
+            </Stack>
+        </Box>
+            </Flex>
         </Flex>
+
         <Flex alignSelf="center">
             <Text fontSize="4xl" fontWeight="bold"> 현재 위치 :</Text>
             <Text ml={5} fontSize="4xl" fontWeight="bold" color="pink.700"> {Number(hour) >=8 && Number(hour) < 9 ? "출근 중" : Number(hour) >= 9 && Number(hour) < 18 ? "출근" : Number(hour) >= 18 && Number(hour) < 19 ? "퇴근 중":"퇴근"} </Text>
