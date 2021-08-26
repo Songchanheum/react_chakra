@@ -5,8 +5,8 @@ import NextLink from 'next/link';
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, HStack, Image, ListItem, Tag, Text, VStack } from '@chakra-ui/react';
 import { Link } from "react-scroll";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react"
-import PortImage from "../image/portpolio.jpg";
-import Port2Image from "../image/portpolio2.jpg";
+import PortImage from "../image/portfolio.jpg";
+import Port2Image from "../image/portfolio2.jpg";
 
 function DevNote(props:any) {
     
